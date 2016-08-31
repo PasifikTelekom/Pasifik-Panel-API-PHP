@@ -62,7 +62,7 @@ class PasifikAPI
 		return $auth;
 	}
 	private function _post($resource, $data){
-		$json_data = json_encode($data, JSON_FORCE_OBJECT);
+		$json_data = json_encode($data);//, JSON_FORCE_OBJECT
 		$header = "Content-Type: application/json"."\r\n".
 				"Accept: application/json"."\r\n".
 				"Authorization: ".$this->authorization."\r\n".
