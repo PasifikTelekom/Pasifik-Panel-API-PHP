@@ -57,6 +57,7 @@ For Linux inside terminal install php5-cli
 
 Go to downloaded file directory and run your php code to server:
 
+    cd /path/to/code/Pasifik-Panel-API-PHP-master/main/
     php -S 127.0.0.1:8888
 
 then open your browser on [http://127.0.0.1:8888](http://127.0.0.1:8888)
