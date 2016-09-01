@@ -1,5 +1,5 @@
 # Pasifik Panel API PHP
-==========================
+
 This library package provides a variety systems, the simplest way to integrate Pasifik services with your system.
 
 ## Requirements
