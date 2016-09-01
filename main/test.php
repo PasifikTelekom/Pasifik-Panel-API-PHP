@@ -86,6 +86,40 @@ class TestCase
 		$encode = false;
 		$result = $this->obj->authorization($encode);
 	}
+	public function get_cdr_report(){
+		$i_account = 123456;
+		$result = $this->obj->call_history($i_account);
+	}
+	public function get_cdr_report_range_datetime(){
+		$i_account = 123456;
+		$start_date = "2016-08-31T10:12:45Z";
+		$end_date = "2016-09-01T10:12:45Z";
+		$cli = "";
+		$cld = "";
+		$offset = 0;
+		$limit = 100;
+		$result = $this->obj->call_history($i_account, $start_date, $end_date, $cli, $cld, $offset, $limit);
+	}
+	public function get_cdr_report_with_type(){
+		$i_account = 123456;
+		$start_date = "";
+		$end_date = "";
+		$cli = "";
+		$cld = "";
+		$offset = 0;
+		$limit = 50;
+		$type_flag = array("non_zero_and_errors", "non_zero", "all", "complete", "incomplete", "errors");
+		$type = $type_flag[0];
+		$result = $this->obj->call_history($i_account, $start_date, $end_date, $cli, $cld, $offset, $limit, $type);
+	}
+	public function get_active_calls(){
+		$i_account_list = array(123, 456);
+		$result = $this->obj->call_active($i_account_list);
+	}
+	public function get_disconnect_active_call(){
+		$id = 123456;
+		$result = $this->obj->call_active_disconnect($id);
+	}
 }
 $test = new TestCase();
 //$test->send_one_message_to_many_receipients();
@@ -101,4 +135,9 @@ $test = new TestCase();
 //$test->query_detailed_report_with_id();
 //$test->get_account_settings();
 $test->get_authority();
+//get_cdr_report();
+//get_cdr_report_range_datetime();
+//get_cdr_report_with_type();
+//get_active_calls();
+//get_disconnect_active_call();
 ?>
