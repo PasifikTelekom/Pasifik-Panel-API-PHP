@@ -31,7 +31,7 @@ class TestCase
 		$text = "SMS Test";
 		$scheduled_delivery_time = "2016-09-28T09:30:00Z";// "%Y-%m-%dT%H:%M:%SZ" format e.g "2016-07-23T21:54:02Z" in UTC Timezone.
 		$period = 1440; // minute number e.g 1440 minute for 24 hours
-		$result = $this->obj->submit($from, $to, $text, false, "Default", $scheduled_delivery_time);
+		$result = $this->obj->submit($from, $to, $text, false, "Default", $scheduled_delivery_time, $period);
 	}
 	public function send_one_message_to_many_receipients_turkish_language(){
 		$from = $this->header;
