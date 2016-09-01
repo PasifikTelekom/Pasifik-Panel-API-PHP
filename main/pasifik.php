@@ -1,10 +1,10 @@
 <?php 
-
 /**
 * Pasifik Telekom API
-* Version: 2
+* Version: 2.0
 * Author: Tarek Kalaji
 * License: MIT
+* Release Date: 2016/09/01
 */
 class PasifikAPI
 {
@@ -61,8 +61,22 @@ class PasifikAPI
 		}
 		return $auth;
 	}
+	public function call_history($i_account, $start_date="", $end_date="", 
+		$cli="", $cld="", $offset=0, $limit=0,$type=""){
+		$data = array("i_account" => $i_account, "start_date" => $start_date, "end_date" => $end_date,
+			"cli" => $cli, "cld" => $cld, "offset" => $offset, "limit" => $limit, "type" => $type);
+		return $this->_post("tel/history/", $data);
+	}
+	public function call_active($i_account_list){
+		$data = array("i_account_list" => $i_account_list);
+		return $this->_post("tel/live/", $data);
+	}
+	public function call_active_disconnect($id){
+		$data = array("id" => $id);
+		return $this->_post("tel/live/disconnect/", $data);
+	}
 	private function _post($resource, $data){
-		$json_data = json_encode($data);//, JSON_FORCE_OBJECT
+		$json_data = json_encode($data);
 		$header = "Content-Type: application/json"."\r\n".
 				"Accept: application/json"."\r\n".
 				"Authorization: ".$this->authorization."\r\n".
