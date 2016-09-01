@@ -22,12 +22,12 @@ Copy `pasifik.php` class to your directory.
       $DEBUG = true;
       $obj = new PasifikAPI($username, $password, $lang, $DEBUG);
     ?>
-
+```
 ## Test Case
 
 Follow your `test.php` TestCase class, for test just uncomment the following methods and replace it with requirement parameters.
 
-
+```php
     <?php 
       $test = new TestCase();
       //$test->send_one_message_to_many_receipients();
@@ -49,7 +49,7 @@ Follow your `test.php` TestCase class, for test just uncomment the following met
       //get_active_calls();
       //get_disconnect_active_call();
     ?>
-
+```
 For Linux inside terminal install php5-cli 
 
 * Ubuntu (debian): `sudo apt-get php5-cli`
