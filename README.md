@@ -8,12 +8,12 @@ This library package provides a variety systems, the simplest way to integrate P
 ## Installation
 Download source code.
 Unzip package and inter to `main/` direcory
-Copy `pasifik.php` class to your directory.
+Copy `pasifik.php` file to your directory.
 
 ## Usage
 
 ```php
-    <?
+    <?php
       require_once("pasifik.php");
       $username = "YOUR_USERNAME";
       $password = "YOUR_PASSWORD";
