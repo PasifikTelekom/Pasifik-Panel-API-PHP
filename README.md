@@ -12,6 +12,7 @@ Copy `pasifik.php` class to your directory.
 
 ## Usage
 
+```php
     <?
       require_once("pasifik.php");
       $username = "YOUR_USERNAME";
@@ -23,8 +24,10 @@ Copy `pasifik.php` class to your directory.
     ?>
 
 ## Test Case
+
 Follow your `test.php` TestCase class, for test just uncomment the following methods and replace it with requirement parameters.
-    
+
+
     <?php 
       $test = new TestCase();
       //$test->send_one_message_to_many_receipients();
@@ -53,7 +56,7 @@ For Linux inside terminal install php5-cli
 * CentOS: `yum install php5-cli`
 
 Go to downloaded file directory and run your php code to server:
-  
+
     php -S 127.0.0.1:8888
 
 then open your browser on [http://127.0.0.1:8888](http://127.0.0.1:8888)
