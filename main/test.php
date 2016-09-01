@@ -134,10 +134,10 @@ $test = new TestCase();
 //$test->query_multi_general_report_with_id();
 //$test->query_detailed_report_with_id();
 //$test->get_account_settings();
-$test->get_authority();
-//get_cdr_report();
-//get_cdr_report_range_datetime();
-//get_cdr_report_with_type();
-//get_active_calls();
-//get_disconnect_active_call();
+//$test->get_authority();
+//$test->get_cdr_report();
+//$test->get_cdr_report_range_datetime();
+//$test->get_cdr_report_with_type();
+//$test->get_active_calls();
+//$test->get_disconnect_active_call();
 ?>
