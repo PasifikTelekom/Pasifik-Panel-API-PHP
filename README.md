@@ -7,7 +7,7 @@ This library package provides a variety systems, the simplest way to integrate P
 
 ## Installation
 Download source code.
-Unzip package and inter to `main/` direcory
+Unzip package and enter to `main/` directory
 Copy `pasifik.php` file to your directory.
 
 ## Usage
@@ -25,7 +25,7 @@ Copy `pasifik.php` file to your directory.
 ```
 ## Test Case
 
-Follow your `test.php` TestCase class, for test just uncomment the following methods and replace it with requirement parameters.
+Follow `test.php` TestCase class, for test just uncomment the following methods and replace it with requirement parameters.
 
 ```php
     <?php 
@@ -55,7 +55,7 @@ For Linux inside terminal install php5-cli
 * Ubuntu (debian): `sudo apt-get php5-cli`
 * CentOS: `yum install php5-cli`
 
-Go to downloaded file directory and run your php code to server:
+Go to downloaded file directory and run php code on local server:
 
     cd /path/to/code/Pasifik-Panel-API-PHP-master/main/
     php -S 127.0.0.1:8888
