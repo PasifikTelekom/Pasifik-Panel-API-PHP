@@ -7,7 +7,9 @@ This library package provides a variety systems, the simplest way to integrate P
 
 ## Installation
 Download source code.
-Unzip package and enter to `main/` directory
+
+Unzip package and enter to `main/` directory.
+
 Copy `pasifik.php` file to your directory.
 
 ## Usage
