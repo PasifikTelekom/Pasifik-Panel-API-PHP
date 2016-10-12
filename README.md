@@ -54,7 +54,7 @@ Follow `test.php` TestCase class, for test just uncomment the following methods 
 ```
 For Linux inside terminal install php5-cli 
 
-* Ubuntu (debian): `sudo apt-get php5-cli`
+* Ubuntu (debian): `sudo apt-get install php5-cli`
 * CentOS: `yum install php5-cli`
 
 Go to downloaded file directory and run php code on local server:
